@@ -10,13 +10,12 @@ public class Printer {
         return this.sheets;
     }
 
-    public String print(int pages, int copies) {
+    public void print(int pages, int copies) {
         int totalPages = pages * copies;
         if (totalPages <= this.sheets) {
             this.sheets -= totalPages;
-
         }
-        return "Please Load Paper";
+
     }
 
 }
