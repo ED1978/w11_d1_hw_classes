@@ -1,13 +1,21 @@
 public class Printer {
 
-    private int paperSheets;
+    private int sheets;
 
-    public Printer(int paperSheets) {
-        this.paperSheets = paperSheets;
+    public Printer(int sheets) {
+        this.sheets = sheets;
     }
 
     public int getSheets() {
-        return this.paperSheets;
+        return this.sheets;
+    }
+
+    public void print(int pages, int copies) {
+        int totalPages = pages * copies;
+        if (totalPages <= this.sheets) {
+            this.sheets -= totalPages;
+        }
+
     }
 
 }

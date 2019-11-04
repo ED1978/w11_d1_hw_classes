@@ -17,4 +17,10 @@ public class PrinterTest {
         assertEquals(50, printer.getSheets());
     }
 
+    @Test
+    public void canPrintEnoughPaper() {
+        printer.print(6, 4);
+        assertEquals(26, printer.getSheets());
+    }
+
 }
