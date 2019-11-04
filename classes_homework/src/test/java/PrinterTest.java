@@ -36,15 +36,19 @@ public class PrinterTest {
 
     @Test
     public void canUseToner() {
-        printer.useToner();
-        printer.useToner();
-        assertEquals(98, printer.getToner());
+        printer.useToner(5, 2);
+        assertEquals(90, printer.getToner());
     }
 
     @Test
     public void canUseTonerWhenPrinting() {
         printer.print(5, 2);
         assertEquals(90, printer.getToner());
+    }
+
+    @Test
+    public void canCalculateTotalPages() {
+        assertEquals(10, printer.calculateTotalPages(5, 2));
     }
 
 }

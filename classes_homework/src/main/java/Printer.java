@@ -17,16 +17,20 @@ public class Printer {
     }
 
     public void print(int pages, int copies) {
-        int totalPages = pages * copies;
-        if (totalPages <= this.sheets) {
-            this.sheets -= totalPages;
-            for (int i = totalPages; i > 0; i -= 1 ) {
-                useToner();
-            }
+        if (calculateTotalPages(pages, copies) <= this.sheets) {
+            this.sheets -= calculateTotalPages(pages, copies);
+            useToner(pages, copies);
         }
     }
 
-    public void useToner() {
-        this.tonerVolume -= 1;
+    public void useToner(int pages, int copies) {
+        for (int i = calculateTotalPages(pages, copies); i > 0; i -= 1 ) {
+            this.tonerVolume -= 1;
+        }
+
+    }
+
+    public int calculateTotalPages(int pages, int copies) {
+        return pages * copies;
     }
 }
