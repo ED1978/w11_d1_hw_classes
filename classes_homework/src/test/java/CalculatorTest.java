@@ -23,4 +23,9 @@ public class CalculatorTest {
         assertEquals(5.0, calculator.subtract(10, 5));
     }
 
+    @Test
+    public void canMultiply() {
+        assertEquals(10.0, calculator.multiply(5, 2));
+    }
+
 }
