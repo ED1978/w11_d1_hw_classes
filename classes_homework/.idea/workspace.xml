@@ -31,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WaterBottleTest">
+  <component name="RunManager" selected="JUnit.CalculatorTest">
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classes_homework" />
       <option name="PACKAGE_NAME" value="" />
@@ -52,8 +52,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WaterBottleTest" />
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.WaterBottleTest" />
       </list>
     </recent_temporary>
   </component>
