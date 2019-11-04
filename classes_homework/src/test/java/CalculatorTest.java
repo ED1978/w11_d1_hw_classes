@@ -18,4 +18,9 @@ public class CalculatorTest {
         assertEquals(4.0, calculator.add(2, 2));
     }
 
+    @Test
+    public void canSubtract() {
+        assertEquals(5.0, calculator.subtract(10, 5));
+    }
+
 }
