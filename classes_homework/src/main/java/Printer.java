@@ -27,10 +27,11 @@ public class Printer {
         for (int i = calculateTotalPages(pages, copies); i > 0; i -= 1 ) {
             this.tonerVolume -= 1;
         }
-
     }
 
     public int calculateTotalPages(int pages, int copies) {
         return pages * copies;
     }
+
+
 }

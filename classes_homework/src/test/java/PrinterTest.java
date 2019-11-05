@@ -1,7 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static junit.framework.TestCase.assertEquals;
 
 public class PrinterTest {
 
@@ -39,6 +39,7 @@ public class PrinterTest {
         printer.useToner(5, 2);
         assertEquals(90, printer.getToner());
     }
+
 
     @Test
     public void canUseTonerWhenPrinting() {
